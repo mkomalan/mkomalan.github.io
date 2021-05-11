@@ -1,0 +1,160 @@
+/*
+*{
+	margin:0;
+	padding:0;
+}
+*/
+
+body{
+	background-color:#f4f4f4;
+	color:#555555;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	/* Same as above */
+	font: normal 16px Arial, Helvetica, sans-serif;
+
+	line-height:1.6em;
+	margin:0;
+}
+
+.container{
+	width:100%;
+	padding-left:10px;
+	
+	transition: margin-left .5s;
+	padding: 16px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+.box-1{
+	background-color:#0071c5;
+	color:#fff;
+
+	border-right:5px blue solid;
+	border-left:5px blue solid;
+	border-top:5px blue solid;
+	border-bottom:5px blue solid;
+	border-width:3px;
+	border-bottom-width:2px;
+	border-top-style:dotted;
+
+	border: 5px #0071c5 solid;
+
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-right:2px;
+	padding-left:2px;
+
+	
+
+	
+	border-radius:25px;
+}
+
+.box-1 h1{
+	font-family:Tahoma;
+	font-weight:800;
+	font-style:bold;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing: 0.2em;
+	
+}
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 1000px; /* Should be removed. Only for demonstration */
+  color:red;
+  background-color: #008CBA;
+}
+
+.left {
+  width: 15%;
+  background-color: #008CBA;
+}
+
+.right {
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #0071c5;border:2px solid#fff;border-radius:10px;margin-top: 150px;} /* Green */
+.button2 {background-color: #0071c5;border:2px solid#fff;border-radius:10px;margin-top: 150px;} /* Blue */
+
+.label {
+  color: blue;
+  background: green;
+  padding: 8px;
+  font-family: Arial;
+  
+}
+.other {background-color: #e7e7e7; color: black;} /* Gray */ 
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 1s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
